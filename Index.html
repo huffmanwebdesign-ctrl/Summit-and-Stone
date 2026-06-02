@@ -145,6 +145,12 @@ img{max-width:100%;display:block}
 .c-2{grid-column:span 2}
 .c-3{grid-column:span 3}
 
+/* clean placeholder shown if any image fails to load (or before client photos are added) */
+.noimg{background:var(--paper);
+  background-image:repeating-linear-gradient(45deg,transparent 0 14px,rgba(12,12,12,.05) 14px 15px)}
+.noimg::after{content:"IMAGE";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  font-family:var(--mono);font-size:12px;letter-spacing:.22em;color:var(--gray);text-transform:uppercase}
+
 /* ===== QUOTE ===== */
 .quote{border-bottom:var(--bw) solid var(--ink);background:var(--acid);padding:64px 24px}
 .quote .stars{font-family:var(--mono);font-size:18px;letter-spacing:4px;margin-bottom:22px}
@@ -297,7 +303,7 @@ footer{background:var(--ink);color:var(--paper)}
     </div>
   </div>
   <div class="hero-img">
-    <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1400&q=80" alt="Landscaped garden" onerror="this.parentElement.style.background='#1a1a16'">
+    <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1400&q=80" alt="Landscaped garden" onerror="this.style.display='none';this.parentElement.classList.add('noimg')">
     <span class="tag">FIG.01 — HILLSIDE GARDEN / NORTH BOULDER</span>
   </div>
 </section>
@@ -319,7 +325,7 @@ footer{background:var(--ink);color:var(--paper)}
 
 <section class="about" id="studio">
   <div class="about-img">
-    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=900&q=80" alt="Landscaper at work" onerror="this.parentElement.style.background='#1a1a16'">
+    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=900&q=80" alt="Landscaper at work" onerror="this.style.display='none';this.parentElement.classList.add('noimg')">
   </div>
   <div class="about-body">
     <span class="tag">// THE STUDIO</span>
@@ -337,10 +343,10 @@ footer{background:var(--ink);color:var(--paper)}
 
 <div class="work-label" id="work"><span>// SELECTED WORK</span><span>BOULDER COUNTY</span></div>
 <section class="work">
-  <div class="cell c-wide rv"><img src="https://images.unsplash.com/photo-1605117882932-f9e32b03fea9?w=1000&q=80" alt="Flagstone patio" onerror="this.parentElement.style.background='#1a1a16'"><span class="lab">01 / FLAGSTONE TERRACE — LOUISVILLE</span></div>
-  <div class="cell c-tall rv"><img src="https://images.unsplash.com/photo-1599685315640-4a9ba2613f46?w=700&q=80" alt="Native bed" onerror="this.parentElement.style.background='#1a1a16'"><span class="lab">02 / NATIVE BED — N. BOULDER</span></div>
-  <div class="cell c-2 rv"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=700&q=80" alt="Front yard" onerror="this.parentElement.style.background='#1a1a16'"><span class="lab">03 / FRONT-YARD — NIWOT</span></div>
-  <div class="cell c-2 rv"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80" alt="Fire pit" onerror="this.parentElement.style.background='#1a1a16'"><span class="lab">04 / FIRE PIT — LAFAYETTE</span></div>
+  <div class="cell c-wide rv"><img src="https://images.unsplash.com/photo-1605117882932-f9e32b03fea9?w=1000&q=80" alt="Flagstone patio" onerror="this.style.display='none';this.parentElement.classList.add('noimg')"><span class="lab">01 / FLAGSTONE TERRACE — LOUISVILLE</span></div>
+  <div class="cell c-tall rv"><img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=700&q=80" alt="Native planting bed" onerror="this.style.display='none';this.parentElement.classList.add('noimg')"><span class="lab">02 / NATIVE BED — N. BOULDER</span></div>
+  <div class="cell c-2 rv"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=700&q=80" alt="Front yard" onerror="this.style.display='none';this.parentElement.classList.add('noimg')"><span class="lab">03 / FRONT-YARD — NIWOT</span></div>
+  <div class="cell c-2 rv"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80" alt="Fire pit" onerror="this.style.display='none';this.parentElement.classList.add('noimg')"><span class="lab">04 / FIRE PIT — LAFAYETTE</span></div>
 </section>
 
 <section class="quote">
