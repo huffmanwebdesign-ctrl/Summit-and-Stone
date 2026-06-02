@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light">
+
+<title>SUMMIT &amp; STONE // Landscape Design + Build // Boulder CO</title>
+<meta name="description" content="Boulder landscape design and build studio. Hardscaping, native planting, irrigation. Front Range, Colorado. Free on-site estimates.">
+<meta name="author" content="Summit & Stone Landscaping">
+<link rel="canonical" href="https://www.summitandstone.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SUMMIT & STONE — Landscape Design + Build">
+<meta property="og:description" content="Boulder landscape design and build studio.">
+<meta property="og:url" content="https://www.summitandstone.com/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1200&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"LandscapingBusiness",
+  "name":"Summit & Stone Landscaping",
+  "image":"https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1200&q=80",
+  "telephone":"+1-303-555-0142","email":"studio@summitandstone.com",
+  "url":"https://www.summitandstone.com/","priceRange":"$$",
+  "address":{"@type":"PostalAddress","streetAddress":"2480 Canyon Blvd","addressLocality":"Boulder","addressRegion":"CO","postalCode":"80302","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":40.0150,"longitude":-105.2705},
+  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"}],
+  "areaServed":["Boulder","Louisville","Lafayette","Niwot","Longmont"],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"127"}
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@600;700;800;900&family=Archivo:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#f2f0ea;
+  --ink:#0c0c0c;
+  --acid:#d6ff3f;
+  --blood:#ff4322;
+  --gray:#9a978d;
+  --disp:'Archivo Expanded','Arial Narrow',sans-serif;
+  --sans:'Archivo',Helvetica,sans-serif;
+  --mono:'Spline Sans Mono',ui-monospace,monospace;
+  --bw:3px; /* border weight */
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;color-scheme:light}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-size:16px;line-height:1.5;overflow-x:hidden;forced-color-adjust:none}
+::selection{background:var(--acid);color:var(--ink)}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.disp{font-family:var(--disp);text-transform:uppercase;line-height:.9;letter-spacing:-.01em}
+.mono{font-family:var(--mono)}
+
+.wrap{max-width:1320px;margin:0 auto;padding:0 24px}
+
+/* offset anchor jumps so the sticky nav doesn't hide section tops */
+#top,#services,#studio,#work,#contact{scroll-margin-top:70px}
+
+/* ===== TOP TICKER ===== */
+.ticker{background:var(--ink);color:var(--acid);font-family:var(--mono);font-size:12px;letter-spacing:.1em;
+  text-transform:uppercase;padding:9px 0;overflow:hidden;white-space:nowrap;border-bottom:var(--bw) solid var(--ink)}
+.ticker .t{display:inline-block;animation:tk 26s linear infinite}
+.ticker span{padding:0 22px}
+@keyframes tk{to{transform:translateX(-50%)}}
+
+/* ===== NAV ===== */
+.nav{display:flex;align-items:stretch;justify-content:space-between;border-bottom:var(--bw) solid var(--ink);position:sticky;top:0;background:var(--paper);z-index:1000}
+.nav .brand{font-family:var(--disp);font-weight:900;font-size:22px;padding:18px 24px;border-right:var(--bw) solid var(--ink);text-transform:uppercase;letter-spacing:-.02em}
+.nav .brand b{color:var(--blood)}
+.nav-links{display:flex}
+.nav-links a{font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:.06em;display:flex;align-items:center;padding:0 22px;border-left:var(--bw) solid var(--ink);transition:.12s}
+@media(hover:hover){.nav-links a:hover{background:var(--ink);color:var(--acid)}}
+.nav-links a.cta{background:var(--acid);font-weight:600}
+.nav-links a.cta:hover{background:var(--blood);color:#fff}
+.burger{display:none;font-family:var(--mono);font-size:13px;text-transform:uppercase;padding:0 22px;border-left:var(--bw) solid var(--ink);align-items:center;cursor:pointer}
+
+/* ===== HERO ===== */
+.hero{border-bottom:var(--bw) solid var(--ink)}
+.hero-top{display:grid;grid-template-columns:1fr 320px}
+.hero-h{padding:50px 24px 30px;border-right:var(--bw) solid var(--ink)}
+.hero-h .kick{font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:24px;display:flex;gap:16px;flex-wrap:wrap}
+.hero-h .kick b{background:var(--ink);color:var(--acid);padding:3px 9px}
+.hero-h h1{font-family:var(--disp);font-weight:900;font-size:clamp(2.6rem,8.5vw,7.2rem);text-transform:uppercase;line-height:.86;letter-spacing:-.03em}
+.hero-h h1 .out{-webkit-text-stroke:2px var(--ink);color:transparent}
+.hero-h h1 .hl{background:var(--blood);color:var(--paper);padding:0 .08em}
+.hero-side{display:flex;flex-direction:column}
+.hero-side .meta{padding:22px 22px;border-bottom:var(--bw) solid var(--ink);font-family:var(--mono);font-size:12px;text-transform:uppercase;line-height:1.7}
+.hero-side .meta b{display:block;font-family:var(--disp);font-size:34px;color:var(--ink);line-height:1}
+.hero-side .go{flex:1;background:var(--acid);display:flex;align-items:flex-end;padding:22px;font-family:var(--disp);font-weight:800;font-size:22px;text-transform:uppercase;transition:.15s}
+.hero-side .go:hover{background:var(--ink);color:var(--acid)}
+.hero-img{height:46vh;min-height:340px;border-top:var(--bw) solid var(--ink);position:relative;background:#1a1a16;overflow:hidden}
+.hero-img img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.15)}
+.hero-img .tag{position:absolute;bottom:0;left:0;background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:12px;text-transform:uppercase;padding:8px 16px;letter-spacing:.08em}
+
+/* ===== STATEMENT ===== */
+.statement{border-bottom:var(--bw) solid var(--ink);padding:60px 24px;max-width:1320px;margin:0 auto}
+.statement p{font-family:var(--disp);font-weight:600;font-size:clamp(1.5rem,3.8vw,3.1rem);text-transform:uppercase;line-height:1.04;letter-spacing:-.02em;max-width:20ch}
+.statement p em{font-style:normal;color:var(--blood)}
+.statement .sub{font-family:var(--mono);font-size:13px;text-transform:uppercase;color:var(--gray);margin-top:24px;max-width:60ch;line-height:1.7;letter-spacing:.04em}
+
+/* ===== SERVICES ===== */
+.svc-label{border-bottom:var(--bw) solid var(--ink);font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:.1em;display:flex;justify-content:space-between;padding:12px 24px;max-width:1320px;margin:0 auto;background:var(--ink);color:var(--acid)}
+.svc{border-bottom:var(--bw) solid var(--ink)}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);max-width:1320px;margin:0 auto}
+.svc-cell{border-left:var(--bw) solid var(--ink);padding:30px 22px 34px;min-height:340px;display:flex;flex-direction:column;transition:.15s}
+.svc-cell:first-child{border-left:0}
+.svc-cell .n{font-family:var(--disp);font-weight:900;font-size:48px;line-height:1}
+.svc-cell h3{font-family:var(--disp);font-weight:800;font-size:23px;text-transform:uppercase;margin:30px 0 14px;line-height:.95}
+.svc-cell p{font-family:var(--sans);font-size:14px;line-height:1.55;flex:1}
+.svc-cell .px{font-family:var(--mono);font-size:12px;text-transform:uppercase;margin-top:18px;border-top:1px solid currentColor;padding-top:12px;letter-spacing:.06em}
+@media(hover:hover){
+  .svc-cell:hover{background:var(--ink);color:var(--paper)}
+  .svc-cell:hover .n,.svc-cell:hover h3{color:var(--acid)}
+}
+
+/* ===== ABOUT + FACTS ===== */
+.about{display:grid;grid-template-columns:1fr 1fr;border-bottom:var(--bw) solid var(--ink)}
+.about-img{border-right:var(--bw) solid var(--ink);min-height:480px;overflow:hidden;background:#1a1a16}
+.about-img img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.12)}
+.about-body{padding:48px 24px}
+.about-body .tag{font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:.1em;background:var(--acid);display:inline-block;padding:3px 10px;margin-bottom:24px}
+.about-body h2{font-family:var(--disp);font-weight:800;font-size:clamp(1.8rem,4vw,3rem);text-transform:uppercase;line-height:.95;letter-spacing:-.02em;margin-bottom:24px}
+.about-body p{font-size:15px;line-height:1.65;margin-bottom:14px;max-width:48ch}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:var(--bw) solid var(--ink)}
+.facts div{border-left:var(--bw) solid var(--ink);padding:22px 18px}
+.facts div:first-child{border-left:0}
+.facts b{font-family:var(--disp);font-weight:900;font-size:42px;line-height:.9;display:block}
+.facts span{font-family:var(--mono);font-size:11px;text-transform:uppercase;color:var(--gray);margin-top:8px;display:block;line-height:1.4}
+
+/* ===== WORK ===== */
+.work-label{border-bottom:var(--bw) solid var(--ink);background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:.1em;display:flex;justify-content:space-between;padding:12px 24px;max-width:1320px;margin:0 auto}
+.work{display:grid;grid-template-columns:repeat(6,1fr);border-bottom:var(--bw) solid var(--ink)}
+.cell{border-left:var(--bw) solid var(--ink);position:relative;overflow:hidden;background:#1a1a16;min-height:280px}
+.cell:first-child{border-left:0}
+.cell img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.1);transition:.4s}
+.cell:hover img{filter:grayscale(0) contrast(1.05)}
+.cell .lab{position:absolute;top:0;left:0;background:var(--paper);font-family:var(--mono);font-size:11px;text-transform:uppercase;padding:6px 10px;border-right:var(--bw) solid var(--ink);border-bottom:var(--bw) solid var(--ink);letter-spacing:.06em}
+.c-wide{grid-column:span 4}
+.c-tall{grid-column:span 2;grid-row:span 2}
+.c-2{grid-column:span 2}
+.c-3{grid-column:span 3}
+
+/* ===== QUOTE ===== */
+.quote{border-bottom:var(--bw) solid var(--ink);background:var(--acid);padding:64px 24px}
+.quote .stars{font-family:var(--mono);font-size:18px;letter-spacing:4px;margin-bottom:22px}
+.quote blockquote{font-family:var(--disp);font-weight:700;font-size:clamp(1.6rem,4vw,3.2rem);text-transform:uppercase;line-height:.98;letter-spacing:-.02em;max-width:24ch}
+.quote cite{font-family:var(--mono);font-size:13px;text-transform:uppercase;font-style:normal;display:block;margin-top:26px;letter-spacing:.08em}
+
+/* ===== CONTACT ===== */
+.contact{display:grid;grid-template-columns:1fr 1fr;border-bottom:var(--bw) solid var(--ink)}
+.c-left{padding:48px 24px;border-right:var(--bw) solid var(--ink)}
+.c-left .tag{font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:.1em;background:var(--ink);color:var(--acid);display:inline-block;padding:3px 10px;margin-bottom:22px}
+.c-left h2{font-family:var(--disp);font-weight:900;font-size:clamp(2.2rem,5vw,4rem);text-transform:uppercase;line-height:.88;letter-spacing:-.03em;margin-bottom:26px}
+.c-left .det{border-top:var(--bw) solid var(--ink)}
+.c-left .det a,.c-left .det div{display:grid;grid-template-columns:110px 1fr;border-bottom:1px solid var(--ink);padding:16px 0;align-items:center}
+.c-left .det .k{font-family:var(--mono);font-size:12px;text-transform:uppercase;color:var(--gray);letter-spacing:.06em}
+.c-left .det .v{font-family:var(--disp);font-weight:700;font-size:17px;text-transform:uppercase}
+.c-left .det a:hover .v{color:var(--blood)}
+.c-right{padding:48px 24px}
+.frow{margin-bottom:22px}
+.frow label{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.08em;display:block;margin-bottom:8px}
+.frow input,.frow select,.frow textarea{width:100%;border:var(--bw) solid var(--ink);background:var(--paper);font-family:var(--mono);font-size:15px;padding:13px 14px;outline:none;color:var(--ink)}
+.frow input:focus,.frow select:focus,.frow textarea:focus{background:var(--acid)}
+.frow textarea{resize:vertical;min-height:90px}
+.submit{width:100%;border:var(--bw) solid var(--ink);background:var(--ink);color:var(--acid);font-family:var(--disp);font-weight:800;font-size:20px;text-transform:uppercase;padding:20px;cursor:pointer;transition:.15s;letter-spacing:.01em}
+.submit:hover{background:var(--blood);color:#fff}
+.fnote{font-family:var(--mono);font-size:11px;text-transform:uppercase;color:var(--gray);margin-top:14px;text-align:center;letter-spacing:.04em}
+.ok{display:none;border:var(--bw) solid var(--ink);background:var(--acid);padding:24px;font-family:var(--disp);font-weight:700;font-size:18px;text-transform:uppercase;margin-top:18px;line-height:1.1}
+
+/* ===== FOOTER ===== */
+footer{background:var(--ink);color:var(--paper)}
+.f-top{display:grid;grid-template-columns:2fr 1fr 1fr}
+.f-top>div{padding:40px 24px;border-left:var(--bw) solid var(--paper)}
+.f-top>div:first-child{border-left:0}
+.f-top .big{font-family:var(--disp);font-weight:900;font-size:40px;text-transform:uppercase;line-height:.9;letter-spacing:-.02em}
+.f-top .big b{color:var(--acid)}
+.f-top p{font-family:var(--mono);font-size:12px;text-transform:uppercase;color:var(--gray);margin-top:16px;line-height:1.7}
+.f-top h4{font-family:var(--mono);font-size:12px;text-transform:uppercase;color:var(--acid);margin-bottom:14px;letter-spacing:.08em}
+.f-top a{display:block;font-family:var(--mono);font-size:13px;text-transform:uppercase;margin-bottom:9px;color:var(--paper)}
+.f-top a:hover{color:var(--acid)}
+.f-bottom{border-top:var(--bw) solid var(--paper);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:16px 24px;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--gray)}
+.f-bottom .credit a{color:var(--acid);font-weight:600}
+.f-bottom .credit a:hover{text-decoration:underline}
+
+/* ===== REVEAL ===== */
+.rv{opacity:0;transform:translateY(20px);transition:.7s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+/* ===== MOBILE ===== */
+@media(max-width:900px){
+  :root{--bw:2px}                /* thinner borders = far less visual noise */
+  .wrap{padding:0 20px}
+
+  .nav .brand{font-size:18px;padding:16px 20px}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--paper);border-bottom:var(--bw) solid var(--ink)}
+  .nav-links.open{display:flex}
+  .nav-links a{border-left:0;border-top:var(--bw) solid var(--ink);padding:16px 20px}
+  .burger{display:flex}
+
+  /* HERO — smaller type, lighter photo, less height */
+  .hero-top{grid-template-columns:1fr}
+  .hero-h{border-right:0;border-bottom:var(--bw) solid var(--ink);padding:34px 20px 26px}
+  .hero-h h1{font-size:clamp(2.4rem,11vw,3.6rem)}
+  .hero-side{flex-direction:row}
+  .hero-side .meta{border-bottom:0;border-right:var(--bw) solid var(--ink);flex:1;padding:18px 20px}
+  .hero-side .meta b{font-size:28px}
+  .hero-side .go{flex:1;align-items:center;font-size:18px;padding:18px 20px}
+  .hero-img{height:auto;min-height:0;aspect-ratio:16/10}
+
+  /* STATEMENT — calmer sizing + breathing room */
+  .statement{padding:44px 20px}
+  .statement p{font-size:clamp(1.5rem,6.5vw,2.1rem)}
+  .statement .sub{font-size:12px;margin-top:18px}
+
+  .svc-label,.work-label{padding:11px 20px}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .svc-cell{min-height:0;padding:22px 16px 24px;border-top:var(--bw) solid var(--ink)}
+  .svc-cell:nth-child(-n+2){border-top:0}
+  .svc-cell:nth-child(odd){border-left:0}
+  .svc-cell .n{font-size:36px}
+  .svc-cell h3{font-size:19px;margin:18px 0 10px}
+
+  /* ABOUT — shorter image, tighter body */
+  .about{grid-template-columns:1fr}
+  .about-img{border-right:0;border-bottom:var(--bw) solid var(--ink);min-height:0;aspect-ratio:3/2}
+  .about-body{padding:36px 20px}
+  .facts{grid-template-columns:1fr 1fr}
+  .facts div{padding:18px 16px}
+  .facts b{font-size:34px}
+  .facts div:nth-child(3){border-left:0}
+  .facts div:nth-child(n+3){border-top:var(--bw) solid var(--ink)}
+
+  /* WORK — single column so photos aren't tiny + cramped */
+  .work{grid-template-columns:1fr}
+  .c-wide,.c-tall,.c-2,.c-3{grid-column:span 1;grid-row:auto}
+  .cell{border-left:0;border-top:var(--bw) solid var(--ink);min-height:0;aspect-ratio:3/2}
+
+  .quote{padding:48px 20px}
+
+  /* CONTACT */
+  .contact{grid-template-columns:1fr}
+  .c-left{border-right:0;border-bottom:var(--bw) solid var(--ink);padding:36px 20px}
+  .c-right{padding:32px 20px}
+
+  /* FOOTER — slimmer so the dark block isn't a wall */
+  .f-top{grid-template-columns:1fr}
+  .f-top>div{border-left:0;border-top:var(--bw) solid var(--paper);padding:30px 20px}
+  .f-top>div:first-child{border-top:0}
+  .f-top .big{font-size:32px}
+}
+@media(max-width:540px){
+  .svc-grid{grid-template-columns:1fr}
+  .svc-cell{border-left:0;border-top:var(--bw) solid var(--ink)}
+  .svc-cell:nth-child(1){border-top:0}
+  .svc-cell:nth-child(2){border-top:var(--bw) solid var(--ink)}
+  .facts{grid-template-columns:1fr 1fr}
+  .hero-h h1{font-size:clamp(2.2rem,10vw,3rem)}
+}
+</style>
+</head>
+<body>
+
+<div class="ticker" aria-hidden="true">
+  <div class="t">
+    <span>★ FREE ON-SITE ESTIMATES</span><span>★ LICENSED + INSURED</span><span>★ FAMILY-RUN SINCE 2009</span><span>★ SERVING THE FRONT RANGE</span><span>★ 4.9 / 127 REVIEWS</span><span>★ FREE ON-SITE ESTIMATES</span><span>★ LICENSED + INSURED</span><span>★ FAMILY-RUN SINCE 2009</span><span>★ SERVING THE FRONT RANGE</span><span>★ 4.9 / 127 REVIEWS</span>
+  </div>
+</div>
+
+<nav class="nav">
+  <a href="#top" class="brand">SUMMIT<b>&amp;</b>STONE</a>
+  <div class="nav-links" id="menu">
+    <a href="#services">Services</a>
+    <a href="#studio">Studio</a>
+    <a href="#work">Work</a>
+    <a href="#contact" class="cta">Get Estimate →</a>
+  </div>
+  <div class="burger" id="burger">MENU</div>
+</nav>
+
+<section class="hero" id="top">
+  <div class="hero-top">
+    <div class="hero-h">
+      <div class="kick"><b>LANDSCAPE DESIGN + BUILD</b> <span>BOULDER, COLORADO</span> <span>EST. 2009</span></div>
+      <h1>We build<br><span class="hl">yards</span> that<br><span class="out">outlast</span><br>the winter.</h1>
+    </div>
+    <div class="hero-side">
+      <div class="meta">
+        <b>600+</b>
+        YARDS BUILT<br>ACROSS THE<br>FRONT RANGE
+      </div>
+      <a href="#contact" class="go">Start →<br>a project</a>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1400&q=80" alt="Landscaped garden" onerror="this.parentElement.style.background='#1a1a16'">
+    <span class="tag">FIG.01 — HILLSIDE GARDEN / NORTH BOULDER</span>
+  </div>
+</section>
+
+<section class="statement">
+  <p class="rv">We don't install yards. We <em>engineer</em> places that age well.</p>
+  <p class="sub rv">A small Boulder studio. On-site, on foot, notebook in hand — reading light, water, and how you actually live outside. Then real plans, real plant lists, real budgets. One crew, start to finish.</p>
+</section>
+
+<div class="svc-label" id="services"><span>// SERVICES</span><span>04 DISCIPLINES</span></div>
+<section class="svc">
+  <div class="svc-grid">
+    <div class="svc-cell rv"><span class="n">01</span><h3>Landscape Design</h3><p>Site-specific master plans, planting schemes, and concepts built for your soil, slope, and sun.</p><span class="px">FREE CONSULT</span></div>
+    <div class="svc-cell rv"><span class="n">02</span><h3>Hardscape + Stone</h3><p>Flagstone patios, dry-stack walls, fire pits, walkways. Laid to beat the freeze-thaw.</p><span class="px">BY ESTIMATE</span></div>
+    <div class="svc-cell rv"><span class="n">03</span><h3>Plant + Maintain</h3><p>Native-first beds, mowing, aeration, seasonal cleanups. Healthy all year.</p><span class="px">FROM $45/VISIT</span></div>
+    <div class="svc-cell rv"><span class="n">04</span><h3>Irrigation</h3><p>Water-wise smart systems. Install, repair, winterize. Lower bills, quietly.</p><span class="px">FROM $120</span></div>
+  </div>
+</section>
+
+<section class="about" id="studio">
+  <div class="about-img">
+    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=900&q=80" alt="Landscaper at work" onerror="this.parentElement.style.background='#1a1a16'">
+  </div>
+  <div class="about-body">
+    <span class="tag">// THE STUDIO</span>
+    <h2>Family-run.<br>Still answering<br>our own phone.</h2>
+    <p>Summit &amp; Stone started in 2009 — one truck, one trailer, and a refusal to make landscaping feel like a corporate transaction.</p>
+    <p>Fifteen years on, we're small by choice. Fully licensed and insured. Every build backed by a workmanship guarantee. Every property treated like our own block.</p>
+    <div class="facts">
+      <div><b>15</b><span>Years / Front Range</span></div>
+      <div><b>600+</b><span>Yards built</span></div>
+      <div><b>4.9</b><span>From 127 reviews</span></div>
+      <div><b>100%</b><span>Licensed + insured</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="work-label" id="work"><span>// SELECTED WORK</span><span>BOULDER COUNTY</span></div>
+<section class="work">
+  <div class="cell c-wide rv"><img src="https://images.unsplash.com/photo-1605117882932-f9e32b03fea9?w=1000&q=80" alt="Flagstone patio" onerror="this.parentElement.style.background='#1a1a16'"><span class="lab">01 / FLAGSTONE TERRACE — LOUISVILLE</span></div>
+  <div class="cell c-tall rv"><img src="https://images.unsplash.com/photo-1599685315640-4a9ba2613f46?w=700&q=80" alt="Native bed" onerror="this.parentElement.style.background='#1a1a16'"><span class="lab">02 / NATIVE BED — N. BOULDER</span></div>
+  <div class="cell c-2 rv"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=700&q=80" alt="Front yard" onerror="this.parentElement.style.background='#1a1a16'"><span class="lab">03 / FRONT-YARD — NIWOT</span></div>
+  <div class="cell c-2 rv"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80" alt="Fire pit" onerror="this.parentElement.style.background='#1a1a16'"><span class="lab">04 / FIRE PIT — LAFAYETTE</span></div>
+</section>
+
+<section class="quote">
+  <div class="wrap">
+    <div class="stars rv">★★★★★</div>
+    <blockquote class="rv">"They turned a sloped mess into the part of our home we never leave."</blockquote>
+    <cite class="rv">— MEGAN R. / NORTH BOULDER</cite>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="c-left">
+    <span class="tag">// ENQUIRE</span>
+    <h2>Tell us<br>about your<br>place.</h2>
+    <div class="det">
+      <a href="tel:+13035550142"><span class="k">PHONE</span><span class="v">(303) 555-0142</span></a>
+      <a href="mailto:studio@summitandstone.com"><span class="k">EMAIL</span><span class="v">STUDIO@SUMMITANDSTONE</span></a>
+      <div><span class="k">STUDIO</span><span class="v">2480 CANYON BLVD, BOULDER</span></div>
+      <div><span class="k">HOURS</span><span class="v">MON–FRI / 8–5</span></div>
+    </div>
+  </div>
+  <div class="c-right">
+    <form id="form" onsubmit="return go(event)">
+      <div class="frow"><label for="name">NAME</label><input id="name" type="text" placeholder="YOUR NAME" required></div>
+      <div class="frow"><label for="phone">PHONE</label><input id="phone" type="tel" placeholder="(303) 555-0000" required></div>
+      <div class="frow"><label for="email">EMAIL</label><input id="email" type="email" placeholder="YOU@EMAIL.COM" required></div>
+      <div class="frow"><label for="svc">INTERESTED IN</label>
+        <select id="svc">
+          <option>LANDSCAPE DESIGN</option>
+          <option>HARDSCAPE + STONE</option>
+          <option>PLANT + MAINTAIN</option>
+          <option>IRRIGATION</option>
+          <option>NOT SURE YET</option>
+        </select>
+      </div>
+      <div class="frow"><label for="msg">PROJECT</label><textarea id="msg" placeholder="YARD SIZE / WHAT YOU WANT / TIMELINE"></textarea></div>
+      <button class="submit" type="submit">SEND ENQUIRY →</button>
+      <p class="fnote">NO SPAM. NO PRESSURE. A REAL HUMAN REPLIES.</p>
+      <div class="ok" id="ok">RECEIVED. WE'LL BE IN TOUCH WITHIN ONE BUSINESS DAY.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="f-top">
+    <div>
+      <div class="big">SUMMIT<b>&amp;</b>STONE</div>
+      <p>Landscape design + build studio. Rooted in Boulder, Colorado. Working the Front Range since 2009.</p>
+    </div>
+    <div>
+      <h4>// INDEX</h4>
+      <a href="#services">Services</a>
+      <a href="#studio">Studio</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Enquire</a>
+    </div>
+    <div>
+      <h4>// VISIT</h4>
+      <a href="tel:+13035550142">(303) 555-0142</a>
+      <a href="mailto:studio@summitandstone.com">Email Us</a>
+      <a>2480 Canyon Blvd<br>Boulder, CO 80302</a>
+    </div>
+  </div>
+  <div class="f-bottom">
+    <span>© 2026 SUMMIT &amp; STONE LANDSCAPING LLC / LICENSED + INSURED</span>
+    <span class="credit">DESIGNED BY <a href="https://huffmanwebdesign.com" target="_blank" rel="noopener">HUFFMAN WEB DESIGN</a></span>
+  </div>
+</footer>
+
+<script>
+  const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+  burger.onclick=()=>menu.classList.toggle('open');
+
+  // Explicit smooth-scroll for every in-page link (#...). More reliable than
+  // relying on native hash jumps, which sandboxed previews often block.
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var id=a.getAttribute('href').slice(1);
+      if(!id) return;
+      var el=document.getElementById(id);
+      if(el){
+        e.preventDefault();
+        el.scrollIntoView({behavior:'smooth',block:'start'});
+        menu.classList.remove('open');
+        try{ history.replaceState(null,'','#'+id); }catch(err){}
+      }
+    });
+  });
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+
+  function go(e){
+    e.preventDefault();
+    var f=document.getElementById('form');
+    f.querySelectorAll('.frow,.submit,.fnote').forEach(function(x){x.style.display='none'});
+    document.getElementById('ok').style.display='block';
+    return false;
+  }
+</script>
+</body>
+</html>
